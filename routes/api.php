@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/getdata','App\Http\Controllers\getdata_controller@result');
+
+//start CH-11 from 5.50 of LARAVEL
